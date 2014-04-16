@@ -32,36 +32,26 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Bookmarklets</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>Drag the bookmarklet to your bookmarks bar. Tested just with Chrome. Should work for other browsers.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Nordstrom Cookie</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>Displays Contents of Cookie - matching for 'nordstrom'</p>
+<p>Initial bookmarklet came from <a href="http://javascript.about.com/library/blbcookie.htm">About.com</a>!!</p>
+<p>
+<br/>
+<a href="javascript:(function(){(function(){x=window.open();x.document.write('%3Cht'+'ml%3E/r%3Che'+'ad%3E%3Ctitle%3EDisplay%20Cookies%3C/title%3E%3C/he'+'ad%3E%3Cbo'+'dy%3E');if(document.cookie==''){x.document.write('No%20Cookies%20Found');}else{thisCookie=document.cookie.split(';%20');x.document.write('%3Cta'+'ble%3E');nordstrom=thisCookie.filter(function(d){return%20d.match(/nordstrom=/g);});for(i=0;i%20%3C%20nordstrom.length;i++){nordstrom[i]=nordstrom[i].replace(/nordstrom=/g,%22%22);sections=nordstrom[i].split(%22%26%22);sections.forEach(function(section){x.document.write('%3Ctr'+'%3E');key_value=section.split(%22=%22);x.document.write('%3Ctd'+'%3E'+key_value[0]+'%3C/td'+'%3E'+'%3Ctd'+'%3E'+key_value[1]+'%3C/td'+'%3E');x.document.write('%3C/tr'+'%3E');});}}x.document.write('%3C/ta'+'ble%3E');x.document.write('%3C/bo'+'dy%3E%3C/ht'+'ml%3E');x.document.close();})()})();" class="button">Nordstrom Cookie</a>
+</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>About</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>I used <a href="http://chriszarate.github.io/bookmarkleter/">bookmarkleter</a> to encode the javascript</p>
       </section>
     </div>
 
